@@ -13,5 +13,13 @@ module.exports = {
         path: path.resolve(__dirname, "build"),
         publicPath: '/',
         filename: 'bundle.js'
+    },
+    devServer: {
+        stats: 'minimal',
+        overlay: true,
+        historyApiFallback: true,
+        disableHostCheck: true,
+        headers: { "Access-Control_Allow_Origin": "*"},
+        https: false
     }
 }
